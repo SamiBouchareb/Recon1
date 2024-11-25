@@ -1,4 +1,5 @@
 import { Ear, Eye } from 'lucide-react';
+import logo from '../assets/images/logo.png';
 
 export default function Footer() {
   return (
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Ear className="h-6 w-6 text-red-500" />
-              <Eye className="h-6 w-6 text-red-500" />
-              <span className="text-xl font-bold">Recon</span>
+              <img 
+                src={logo} 
+                alt="Recon Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-400 max-w-md">
               Ihr Spezialist für Sehen und Hören in Emden. Modernste Technologie und persönliche
